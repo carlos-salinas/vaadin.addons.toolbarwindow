@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.thingtrack</groupId>
-	<artifactId>com.vaadin.addons.dragdroplayouts</artifactId>
-	<version>0.6.1</version>
+	<artifactId>com.vaadin.addons.toolbarwindow</artifactId>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>konekti.dragdroplayouts</name>
@@ -26,8 +26,8 @@
 					<obrRepository>NONE</obrRepository>
 					<manifestLocation>META-INF</manifestLocation>
 					<instructions>
-						<Export-Package>*</Export-Package>
-						<Import-Package>!com.google*,!com.thingtrack.konekti.*,!com.vaadin.incubator.*,*</Import-Package>
+						<Export-Package>!org.vaadin.toolbarwindow.widgeset, *</Export-Package>
+						<Import-Package>*</Import-Package>
 						<Embed-Transitive>false</Embed-Transitive>
 						<!-- <Include-Resource>src/main/resources</Include-Resource> -->
 						<!-- embed all compile and runtime scope dependencies, except those 
@@ -51,12 +51,12 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.vaadin.addons</groupId>
-			<artifactId>dragdroplayouts</artifactId>
-			<version>0.6.1</version>
+			<artifactId>toolbarwindow</artifactId>
+			<version>0.1</version>
 		</dependency>
 	</dependencies>
 
